@@ -188,7 +188,7 @@ b2b-mail-miner/
 
 Desenvolvido por **Rian Guilherme Joner**  
 - **GitHub**: [@rianjoner1-dot](https://github.com/rianjoner1-dot)  
-- **LinkedIn**: [rian-joner-854737227](https://linkedin.com/in/rian-joner-854737227)
+- **LinkedIn**: [rian-joner](https://www.linkedin.com/in/rianjoner/)
 
 ---
 
