@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ex-01",
+    "name": "Conemang Conexões e Mangueiras Hidráulicas Ltda",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0001",
+    "address": "Dourados - MS"
+  },
+  {
+    "id": "ex-02",
+    "name": "Softgran Informática e Softwares Comerciais",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0002",
+    "address": "Dourados - MS"
+  },
+  {
+    "id": "ex-03",
+    "name": "Tornearia de Paula e Filhos",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0003",
+    "address": "Dourados - MS"
+  }
+]

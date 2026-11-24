@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ex-01",
+    "name": "Conemang Conexões e Mangueiras Hidráulicas Ltda",
+    "cleanName": "Conemang Conexões",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0001",
+    "address": "Dourados - MS",
+    "emails": ["contato@example.com"],
+    "primaryEmail": "contato@example.com"
+  },
+  {
+    "id": "ex-02",
+    "name": "Softgran Informática e Softwares Comerciais",
+    "cleanName": "Softgran Informática",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0002",
+    "address": "Dourados - MS",
+    "emails": ["comercial@example.com"],
+    "primaryEmail": "comercial@example.com"
+  },
+  {
+    "id": "ex-03",
+    "name": "Tornearia de Paula e Filhos",
+    "cleanName": "Tornearia de Paula",
+    "website": "https://example.com",
+    "phone": "(67) 99999-0003",
+    "address": "Dourados - MS",
+    "emails": ["orcamentos@example.com"],
+    "primaryEmail": "orcamentos@example.com"
+  }
+]

@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Variáveis de ambiente e credenciais
+.env
+*.env
+*.env.local
+
+# Dados reais privados
+input/leads.json
+output/leads_com_email.json
+output/progresso.json
+*.pdf
+*.log
+
+# Sistema e IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

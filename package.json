@@ -1,0 +1,28 @@
+{
+  "name": "b2b-mail-miner",
+  "version": "1.0.0",
+  "description": "Motor leve de inteligência B2B para extração automatizada de e-mails corporativos via web scraping e disparo outbound com cadência anti-spam e sanitização de nomes empresariais.",
+  "main": "src/sender.mjs",
+  "type": "module",
+  "scripts": {
+    "extract": "node src/extractor.mjs",
+    "send": "node src/sender.mjs --send",
+    "preview": "node src/sender.mjs",
+    "test": "node src/name-cleaner.mjs"
+  },
+  "keywords": [
+    "nodejs",
+    "web-scraping",
+    "outbound",
+    "b2b",
+    "cold-email",
+    "lead-generation",
+    "nodemailer",
+    "automation"
+  ],
+  "author": "Rian Guilherme Joner <rianjonerb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.10.0"
+  }
+}
