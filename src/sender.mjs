@@ -1,8 +1,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import dns from 'node:dns/promises';
+import nodeDns from 'node:dns';
 import nodemailer from 'nodemailer';
 import { cleanBusinessName } from './name-cleaner.mjs';
+
+try {
+  nodeDns.setServers(['8.8.8.8', '1.1.1.1']);
+} catch {}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -194,6 +200,19 @@ async function main() {
     const cleanName = cleanBusinessName(lead.name);
     const subject = `Soluções digitais & modernização para a ${cleanName}`;
     const text = generateEmailBody(lead.name);
+
+    // Validação preventiva de MX do domínio antes do envio
+    const domain = lead.email.split('@')[1];
+    let hasMx = false;
+    try {
+      const mx = await dns.resolveMx(domain);
+      hasMx = mx && mx.length > 0;
+    } catch {}
+
+    if (!hasMx) {
+      console.warn(`[${i + 1}/${toSend.length}] ⚠️ Pulado: domínio @${domain} não possui servidor MX ativo.`);
+      continue;
+    }
 
     console.log(`[${i + 1}/${toSend.length}] Enviando para: ${cleanName} <${lead.email}>...`);
 
